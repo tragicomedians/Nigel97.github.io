@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>扫码结果</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
 </head>
 <body>
@@ -11,17 +12,30 @@
 <div id="app" align="center">
     <!---->
         <div style="height: 15px;">
-        </div> 
+        </div>
     <img src="duigoulan.png"  style="width: 150px; height: 150px;">
         <div >学生</div>
     <div class="mint-text bh-color-gray sjat2iw05 OPjhiwxcyll mt-color-default"
-         style="font-family: PingFang Sc">林静，验证成功，一路平安。</div>
+         style="font-family: PingFang Sc">陈伟伟，验证成功，一路平安。</div>
         <div >
     本次扫码时间：</div> <div>
-    2020-09-05 18:51:54</div></div>
+    {{aaa}}</div></div>
 
 
 
 </body></body>
+<script>
+    new Vue({
+        el:"#app",
+        data:{
+            aaa: new Date().getFullYear() + "-" + (new Date().getMonth() + 1) + "-" + new Date().getDate()+ " "+(new Date().getHours())+":"+(new Date().getMinutes()+":"+(new Date().getSeconds()))
+        }
+
+
+    })
+
+
+
+</script>
 
 </html>

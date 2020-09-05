@@ -2,8 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>扫码结果</title>
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+    <title>Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
 </head>
 <body>
@@ -11,31 +10,33 @@
 
 <div id="app" align="center">
     <!---->
-        <div style="height: 15px;">
-        </div>
-    <img src="duigoulan.png"  style="width: 150px; height: 150px;">
-        <div >学生</div>
+    <div class="mint-layout-container bh-bg-color-light cjauieny7 OPjdicwoslf">
+    <div class="mint-layout-container pjhiwtwjo">
+        <div class="mint-layout-spacing sjakx3nec OPjhiwxcyg" style="height: 15px;">
+        </div> <img src="duigoulan.png" class="mint-image sjas257dv OPjhiwxcyh" style="width: 150px; height: 150px;">
+        <div class="mint-text bh-color-gray sjat2iw05 OPjhiwxcyll1 mt-color-default">学生</div>
     <div class="mint-text bh-color-gray sjat2iw05 OPjhiwxcyll mt-color-default"
-         style="font-family: PingFang Sc">陈伟伟，验证成功，一路平安。</div>
-        <div >
-    本次扫码时间：</div> <div>
-    {{aaa}}</div></div>
+         style="font-family: PingFang Sc">林静，验证成功，一路平安。</div>
+        <div class="mint-text bh-color-gray-3 OPjhiwxcyne mt-color-default">
+    本次扫码时间：</div> <div class="mint-text bh-color-gray-3 OPjhiwxcyne1 mt-color-default">
+    2020-09-05 18:51:54</div></div></div></div>
 
 
 
-</body></body>
-<script>
-    new Vue({
-        el:"#app",
-        data:{
-            aaa: new Date().getFullYear() + "-" + (new Date().getMonth() + 1) + "-" + new Date().getDate()+ " "+(new Date().getHours())+":"+(new Date().getMinutes()+":"+(new Date().getSeconds()))
-        }
+<div class="mint-indicator" style="display: none;">
+    <div class="mint-indicator-wrapper" style="padding: 15px;">
+        <span class="mint-indicator-spin">
+            <div class="mint-spinner-snake" style="border-top-color: rgb(214, 214, 214); border-left-color: rgb(214, 214, 214);
+             border-bottom-color: rgb(214, 214, 214); height: 32px; width: 32px;"></div>
+        </span><span class="mint-indicator-text" style="display: none;"></span></div><div class="mint-indicator-mask"></div></div></body></body>
+<style class="vjs-styles-defaults">
+    .video-js {
+        width: 300px;
+        height: 150px;
+    }
 
-
-    })
-
-
-
-</script>
-
+    .vjs-fluid {
+        padding-top: 56.25%
+    }
+</style>
 </html>
